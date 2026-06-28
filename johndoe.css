@@ -64,6 +64,10 @@ body {
   outline: 0 !important;
 }
 
+.blanco{color: white; text-decoration: none;}
+
+.blanco:hover{color: white; text-decoration: none;}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -593,6 +597,7 @@ pre code {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 25px;
 }
 
 .no-gutters {
@@ -616,6 +621,8 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  min-height: 100%;
+  max-height: 1005;
 }
 
 .col {
@@ -5031,6 +5038,27 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+.cardd {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+
+}
+
+
 .card {
   position: relative;
   display: -webkit-box;
@@ -5043,6 +5071,7 @@ input[type="button"].btn-block {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 0;
+  height: 80%;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -5068,9 +5097,20 @@ input[type="button"].btn-block {
 .card-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   padding: 1.25rem;
+  text-align: justify;
+  overflow-y: scroll;
+
+  
+}
+
+.card-body::-webkit-scrollbar{
+
+
+  display: none;
+
 }
 
 .card-title {
@@ -7201,6 +7241,8 @@ button.bg-light:focus {
 
 .bg-dark {
   background-color: #343a40 !important;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -8905,6 +8947,7 @@ button.bg-dark:focus {
 .m-3 {
   margin: 1rem !important;
 }
+.mt-20{text-align: justify;}
 
 .mt-3,
 .my-3 {
@@ -10968,7 +11011,8 @@ p {
 }
 
 .icon-lg {
-  font-size: 30px;
+  font-size: 90px;
+  background-image: url();
 }
 
 .icon-xl {
@@ -10992,7 +11036,7 @@ p {
 
 .line {
   display: block;
-  width: 25px;
+  width: 100%;
   height: 1.5px;
   background-color: #F85C70;
 }
@@ -11079,6 +11123,21 @@ p {
 .price-card {
   padding: 30px;
   border: 1px solid #dee2e6;
+  width: 100%;
+  max-height:30%;
+}
+
+
+@keyframes rotar {
+  0%{transform: rotateY(0deg); background: white;}
+  100%{transform: rotateY(180deg); background-image: url("imgs/blog1.jpg"); background-repeat: no-repeat; background-size: cover;}
+}
+
+.price-card:hover{
+  padding: 30px;
+  border: 1px solid #dee2e6;
+  animation: rotar 5s  ;
+  
 }
 
 .price-card .price-card-title {
@@ -11670,3 +11729,9 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+.icono-grande{aspect-ratio: 1/1; width: 70px;}
+
+.margen{margin-left:30% ;}
+
+.centrado{display: flex; justify-content: center; align-items: center; margin-left: 90px;}
