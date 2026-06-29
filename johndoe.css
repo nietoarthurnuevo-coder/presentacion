@@ -11816,5 +11816,5 @@ position: absolute;
 
 .centered{text-align: justify; color:black; padding: 20px; color: #F2F0DF;}
 
-.fondo{position: absolute; background: url("imgs/ladrillos.jpeg"); z-index: 1; width: 100%; height: 100%;    display: grid;  }
+.fondo{position: absolute; background: url("ladrillos.jpeg"); z-index: 1; width: 100%; height: 100%;    display: grid;  }
 
