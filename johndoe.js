@@ -136,3 +136,9 @@ function initMap() {
       ]
     });
 }
+
+
+let abcard=document.getElementById("abcard");
+let padreabbcard=document.getElementById("about");
+
+abcard.style="min-height:"+ (padreabbcard.clientHeight*52/100) + "px";
