@@ -631,9 +631,14 @@
 }
 .ti-widgetized:before {
 	content: "\e6ca";
+
+	
 }
 .ti-widget:before {
 	content: "\e6cb";
+	
+	
+	
 }
 .ti-widget-alt:before {
 	content: "\e6cc";
